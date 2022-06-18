@@ -1,0 +1,30 @@
+.container {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.image-container img {
+    width: 75%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer p {
+    padding: 2rem 0;
+    display: inline-block;
+    animation: spin 2s;
+}
+
+footer > p:hover {
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotateX(-20deg) rotateY(20deg);
+    }
+    100% {
+      transform: rotateX(-20deg) rotateY(740deg);
+    }
+}
